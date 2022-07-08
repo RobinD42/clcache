@@ -29,7 +29,7 @@ from typing import Any, Iterator, List, Tuple
 
 from atomicwrites import atomic_write
 
-VERSION = "5.0.0-dev"
+VERSION = "5.0.1-dev.rpd"
 
 HashAlgorithm = hashlib.md5
 
