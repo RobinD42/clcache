@@ -66,6 +66,9 @@ def main():
             if values and not values.lower().endswith(".exe"):
                 setattr(namespace, "non_command", values)
                 return
+            # if just 'cl.exe' is used then expand to the full path
+            if values and values.lower() == 'cl.exe':
+                values = which(values)
             setattr(namespace, self.dest, values)
 
     class RemainderSetAction(argparse.Action):

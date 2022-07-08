@@ -6,5 +6,7 @@
 *.spec
 /build
 /dist
+/.eggs
+/clcache.egg-info
 
 __pycache__
